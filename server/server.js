@@ -2,8 +2,12 @@ var express = require('express');
 var path = require('path');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
+var port = 3000;
 
 var app = express();
+
+console.log("Hello From Node.js App")
+
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -37,7 +41,7 @@ app.use(function(req, res, next) {
 });
 
 // Start the server
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || port);
 
 var server = app.listen(app.get('port'), function() {
   console.log('Express server listening on port ' + server.address().port);

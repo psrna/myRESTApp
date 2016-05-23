@@ -8,6 +8,7 @@ myApp.factory('dataFactory', function($http) {
     return $http.get(urlBase);
   }; 
 
+  
   return _prodFactory;
 });
 

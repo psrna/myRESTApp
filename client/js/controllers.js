@@ -8,14 +8,17 @@ myApp.controller("HeaderCtrl", ['$scope', '$location', 'UserAuthFactory',
     $scope.logout = function () {
       UserAuthFactory.logout();
     }
+ 
   }
 ]);
+
 
 myApp.controller("HomeCtrl", ['$scope',
   function($scope) {
     $scope.name = "Home Controller";
   }
 ]);
+
 
 myApp.controller("Page1Ctrl", ['$scope',
   function($scope) {

@@ -1,7 +1,27 @@
+	var data = [{
+	  name: 'Cheese',
+	  id: '1'
+	}, {
+	  name: 'Doughnut',
+	  id: '2'
+	}, {
+	  name: 'Cookies',
+	  id: '3'
+	}];
+
 var products = {
 
   getAll: function(req, res) {
-    var allProducts = data; // Spoof a DB call
+    var allProducts = [{
+	  name: 'Cheese',
+	  id: '1'
+	}, {
+	  name: 'Doughnut',
+	  id: '2'
+	}, {
+	  name: 'Cookies',
+	  id: '3'
+	}];// Spoof a DB call
     res.json(allProducts);
   },
 
@@ -31,15 +51,6 @@ var products = {
   }
 };
 
-var data = [{
-  name: 'Ice cream',
-  id: '1'
-}, {
-  name: 'Doughnut',
-  id: '2'
-}, {
-  name: 'Cookies',
-  id: '3'
-}];
+
 
 module.exports = products;
