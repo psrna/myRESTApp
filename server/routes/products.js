@@ -32,13 +32,13 @@ var products = {
 };
 
 var data = [{
-  name: 'product 1',
+  name: 'Ice cream',
   id: '1'
 }, {
-  name: 'product 2',
+  name: 'Doughnut',
   id: '2'
 }, {
-  name: 'product 3',
+  name: 'Cookies',
   id: '3'
 }];
 

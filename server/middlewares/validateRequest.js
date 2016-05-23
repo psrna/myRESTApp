@@ -6,7 +6,7 @@ module.exports = function(req, res, next) {
   // When performing a cross domain request, you will recieve
   // a preflighted request first. This is to check if our the app
   // is safe. 
-
+		
   // We skip the token outh for [OPTIONS] requests.
   //if(req.method == 'OPTIONS') next();
 
@@ -16,6 +16,8 @@ module.exports = function(req, res, next) {
   if (token || key) {
     try {
       var decoded = jwt.decode(token, require('../config/secret.js')());
+      
+      var b = decoded;
 
       if (decoded.exp <= Date.now()) {
         res.status(400);
