@@ -1,7 +1,7 @@
 myApp.controller('LoginCtrl', ['$scope', '$window', '$location', 'UserAuthFactory', 'AuthenticationFactory',
   function($scope, $window, $location, UserAuthFactory, AuthenticationFactory) {
     $scope.user = {
-      username: 'ibuziuk@redhat.com',
+      username: 'psrna@redhat.com',
       password: 'password'
     };
     
