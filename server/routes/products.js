@@ -13,7 +13,7 @@ var products = {
 
   getAll: function(req, res) {
     var allProducts = [{
-	  name: 'Cheese',
+	  name: 'Ice Cream',
 	  id: '1'
 	}, {
 	  name: 'Doughnut',

@@ -6,6 +6,10 @@ var paths = {
   src: ['./*.html', './partials/*.html', './css/*.css', './js/*.js']
 };
 
+gulp.task("hello", function() {
+	console.log("Hello, Neon")
+});
+
 gulp.task('connect', function() {
   connect.server({
     root: paths.app,
